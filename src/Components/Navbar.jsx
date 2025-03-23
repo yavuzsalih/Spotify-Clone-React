@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Login from "./SpotifyLogin/login.jsx";
 
 const Navbar = () => {
     return (
@@ -9,16 +10,18 @@ const Navbar = () => {
                         <i className="bi bi-spotify"></i>
                         Spotify
                     </a>
-                    <div>
-                        <a className="navbar-brand text-white fw-bold" href="#">Premium</a>
-                        <a className="navbar-brand text-white fw-bold" href="#">Destek</a>
-                        <a className="navbar-brand text-white fw-bold" href="#">Indir</a>
+                    <div className="d-flex align-items-center">
+                        <a className="navbar-brand text-white fw-bold me-4" href="#">Premium</a>
+                        <a className="navbar-brand text-white fw-bold me-4" href="#">Destek</a>
+                        <a className="navbar-brand text-white fw-bold me-4" href="#">İndir</a>
+                        <div className="ms-auto">
+                            <Login />
+                        </div>
                     </div>
-
                 </div>
             </nav>
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

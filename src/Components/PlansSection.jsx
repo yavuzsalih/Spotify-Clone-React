@@ -34,21 +34,23 @@ const plans = [
 const PlanCard = ({ title, price, offer, features, bgColor }) => {
     return (
         <div className="col-md-4 mb-4 d-flex align-items-stretch">
-            <div className="bg-dark text-white p-4 rounded w-100">
-                <div className="d-flex align-items-center">
+            <div className="bg-dark text-white p-4 rounded w-100 d-flex flex-column">
+                <div className="d-flex align-items-center mb-3">
                     <img src="image/spotify.png" width="30" height="30" alt="Spotify Logo" /> {/* added alt attribute */}
                     <h5 className="mb-0 ms-2">Premium</h5>
                 </div>
-                <div className="text-start">
+                <div className="text-start flex-grow-1">
                     <h3 className="fw-bold mt-3" style={{ color: bgColor }}>{title}</h3>
                     {offer && <h4 className="fw-bold">{offer}</h4>}
                     <p className="text-muted">{price}</p>
-                    <hr />
+                    <hr className="my-3 mx-0" /> {/* adjusted margin */}
                     <ul className="fw-bold">
                         {features.map((feature, index) => (
                             <li key={index}>{feature}</li>
                         ))}
                     </ul>
+                </div>
+                <div className="mt-auto">
                     <a
                         href="#"
                         className="btn w-100 rounded-pill mt-3 fw-bold"

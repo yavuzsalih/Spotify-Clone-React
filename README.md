@@ -1,12 +1,28 @@
-# React + Vite
+# Spotify UI Clone with API Integration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+This project is a **React** based Spotify UI clone. In my first version, I only focused on UI design. However, in this version, I added **Spotify API** integration to dynamically fetch the user's name and the first 5 songs they have listened to.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+- After the user logs in, the **Spotify API** fetches the user's information and their first 5 songs.
+- The **First 5 Songs** are displayed in a table, showing the song name, artist, and album image.
+- The application stores the user’s data (name and songs) in **localStorage**, so the data persists even if the page is refreshed.
+- Once logged in, the user's name and the list of songs are visible on the page. When the page is refreshed, the data remains intact.
 
-## Expanding the ESLint configuration
+### Technologies Used
+- React
+- Spotify API
+- LocalStorage
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Project Structure
+
+
+
+<img src="./public/image/Readme/Readme1.png">
+<img src="./public/image/Readme/Readme2.png">
+<img src="./public/image/Readme/Readme3.png">
+<img src="./public/image/Readme/Readme4.png">
+<img src="./public/image/Readme/Readme5.png">
+<img src="./public/image/Readme/Readme6.png">
+<img src="./public/image/Readme/Readme7.png">
